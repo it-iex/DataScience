@@ -1,0 +1,2 @@
+importFrom("stats", "cor", "predict", "sd")
+exportPattern("^[[:alpha:]]+")

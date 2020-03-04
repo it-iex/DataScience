@@ -1,0 +1,14 @@
+Package: autoML
+Type: Package
+Title: Saving you time creating models
+Version: 1.7.24
+Author: Brett W. 
+Maintainer: Brett W. <bwaugh@IronEagleX.com>
+Description: Functions from the package implement the models using many different parameters and methods.
+    Running all these parameters and methods simultanesouly saves a significant
+    amount of time since the highest performing models can be discovered quicker.
+Encoding: UTF-8
+License: TBD
+LazyData: true
+Imports: stats, randomForest, caret, caretEnsemble,  e1071, corrplot, arm, MASS, Hmisc, mlbench, monomvn, kernlab, gam
+RoxygenNote: 7.0.2
