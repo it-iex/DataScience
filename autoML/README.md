@@ -1,12 +1,6 @@
 # autoML
 > Author Note: Brett Waugh, Data Science Engineer - Iron EagleX
 
-The code for this project can be found [here](capstone.R). The markdown can be found [here](capstone.Rmd), along with the output of the markdown [here](Capstone_Markdown.docx).
-The white paper for the project can be found [here](Waugh-Capstone.pdf). 
-The original dataset is [here](directory.csv) along with the additional dataset [here](addData.csv).
-
-This is a machine learning package in R that attempts to augment a data sciencist's toolkit. The package automates several models with multiple different parameters to expedite the model creation.
-
 
 ## Introduction
 This is a machine learning package in R that attempts to augment a data sciencist's toolkit. The package automates several models with multiple different parameters to expedite the model creation.
