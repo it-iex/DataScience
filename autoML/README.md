@@ -15,7 +15,7 @@ Functions from the package implement the models using many different parameters 
 > [Code is here.](/autoML/R/autoCorr.R) [Documentation is here.](/autoML/man/autoCorr.Rd)
 
 Discovers which variables are highly correlated. Correlated features add noise to machine learning, and removing the variables lowers the number of dimensions.
-Learn more about why correlated features matter with these articles: (In supervised learning, why is it bad to have correlated features?)[https://datascience.stackexchange.com/questions/24452/in-supervised-learning-why-is-it-bad-to-have-correlated-features], (Why Feature Correlation Matters …. A Lot!)[https://towardsdatascience.com/why-feature-correlation-matters-a-lot-847e8ba439c4], and (Why exclude highly correlated features when building regression model ??)[https://towardsdatascience.com/why-exclude-highly-correlated-features-when-building-regression-model-34d77a90ea8e].
+Learn more about why correlated features matter with these articles: [In supervised learning, why is it bad to have correlated features?](https://datascience.stackexchange.com/questions/24452/in-supervised-learning-why-is-it-bad-to-have-correlated-features), [Why Feature Correlation Matters …. A Lot!](https://towardsdatascience.com/why-feature-correlation-matters-a-lot-847e8ba439c4), and [Why exclude highly correlated features when building regression model ??](https://towardsdatascience.com/why-exclude-highly-correlated-features-when-building-regression-model-34d77a90ea8e).
 
 ### autoEnsemble
 > [Code is here.](/autoML/R/autoEnsemble.R) [Documentation is here.](/autoML/man/autoEnsemble.Rd)
