@@ -53,6 +53,7 @@ Performs ten different types of regression with eight different parameters and p
 * Bayesian Ridge Regression (Model Averaged)
 * Gaussian Process
 * CART 
+
 Each of the models above are accessed with the resampling method after the name. To save space, I did not list all eighty models here. The options after it are:
 * boot
 * boot632
