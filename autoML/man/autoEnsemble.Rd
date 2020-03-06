@@ -1,7 +1,7 @@
 \name{autoEnsemble}
 \alias{autoEnsemble}
 \title{
-Automated feature analysis
+Automated ensemble model creation
 }
 \description{
 Creates three different ensemble models based on ten different sub-models with three different parameters each. Ensemble models combine the stregnths of each sub-model to create a stronger

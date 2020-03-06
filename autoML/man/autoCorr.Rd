@@ -1,7 +1,7 @@
 \name{autoCorr}
 \alias{autoCorr}
 \title{
-Automated principal component analysis
+Automated correlation analysis
 }
 \description{
 Discovers which variables are highly correlated. Correlated features add noise to machine learning, and removing the variables lowers the number of dimensions.

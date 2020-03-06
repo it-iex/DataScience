@@ -1,7 +1,7 @@
 \name{autoSVM}
 \alias{autoSVM}
 \title{
-Automated feature analysis
+Automated support vector machine (SVM) creation
 }
 \description{
 Performs a grid search on an SVM with three different resampling methods and four different kernals. The grid search discovers the optimal values for alpha, gamma, and cost. The model is run many, many times so it \strong{may run for a long time}. Even a medium sized dataset with many features \strong{could take hours} before it is finished.
