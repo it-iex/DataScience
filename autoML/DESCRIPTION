@@ -1,7 +1,7 @@
 Package: autoML
 Type: Package
 Title: Saving you time creating models
-Version: 1.7.24
+Version: 1.8.26
 Author: Brett W. 
 Maintainer: Brett W. <bwaugh@IronEagleX.com>
 Description: Functions from the package implement the models using many different parameters and methods.
@@ -10,5 +10,5 @@ Description: Functions from the package implement the models using many differen
 Encoding: UTF-8
 License: TBD
 LazyData: true
-Imports: stats, randomForest, caret, caretEnsemble,  e1071, corrplot, arm, MASS, Hmisc, mlbench, monomvn, kernlab, gam
+Imports: fpc, cluster, mclust, stats, randomForest, caret, caretEnsemble,  e1071, corrplot, arm, MASS, Hmisc, mlbench, monomvn, kernlab, gam
 RoxygenNote: 7.0.2

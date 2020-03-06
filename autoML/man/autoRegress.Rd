@@ -25,7 +25,7 @@ Performs ten different types of regression with eight different parameters and p
 \item repeatCV
 \item loocv
 \item lgocv}
-Models are returned for further use, along with the results of all the models and the best performing model.}
+Models are returned for further use, along with the results of all the models and the best performing model. Added stratified data capability, after testing it increased the median model score by 0.10 and the mean by 0.084.}
 \usage{
 autoRegress(form, dat)
 }

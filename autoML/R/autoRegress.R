@@ -1,6 +1,6 @@
 #' @export
 
-autoRegress <- function(form, dat) {
+autoRegress_dev <- function(form, dat) {
 
   ##### Data Exploring #####
 
@@ -47,7 +47,8 @@ autoRegress <- function(form, dat) {
 
   for (mod in modelList) {
     for (param in paramList) {
-      ctr <- caret::trainControl(method = param)
+      cv.folds <- createMultiFolds(mtcars$mpg, k=10, times = 3)
+      ctr <- caret::trainControl(method = param, index = cv.folds, number=10, repeats = 5)
       results[[paste(mod, param, sep = ".")]] <-
         caret::train(
           form,
