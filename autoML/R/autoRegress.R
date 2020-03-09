@@ -1,12 +1,18 @@
 #' @export
 
-autoRegress_dev <- function(form, dat) {
+autoRegress <- function(form, dat) {
 
   ##### Data Exploring #####
 
   set.seed(1337)
 
   df <- as.data.frame(dat)
+
+  y <- strsplit(paste(form), "~")[[2]]
+
+  y <- subset(df, select = y)
+
+  y <- unlist(c, use.names = FALSE)
 
   ##### List of current models and parameters. #####
 
@@ -47,15 +53,16 @@ autoRegress_dev <- function(form, dat) {
 
   for (mod in modelList) {
     for (param in paramList) {
-      cv.folds <- createMultiFolds(mtcars$mpg, k=10, times = 3)
-      ctr <- caret::trainControl(method = param, index = cv.folds, number=10, repeats = 5)
+      cv.folds <- createMultiFolds(y, k=10, times = 3)
+      ctr <- caret::trainControl(method = param, index = cv.folds, number=10, repeats = 10)
       results[[paste(mod, param, sep = ".")]] <-
         caret::train(
           form,
           data = df,
           method = mod,
-          trControl = ctr
-        )
+          trControl = ctr )
+
+      print(c(param, mod))
 
       results_2[[paste(mod, param, sep = ".")]] <- results[[paste(mod, param, sep = ".")]]$results$Rsquared
 
