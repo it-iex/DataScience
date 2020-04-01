@@ -135,14 +135,14 @@ https://github.com/it-iex/DataScience/archive/master.zip
 cd DataScience/autoML/
 ```
 
-4 Load the image.
+4 Build the image. ( This will take a while )
 ```
-docker load -i automl-1.8.26.4.tar
+docker build --tag automl:1.8.26.4 .
 ```
 
 5. Start the Docker instance. 
 ```
-docker run --rm -p 8787:8787 -e ROOT=TRUE -e PASSWORD=pass automl:1.8.26
+docker run --rm -p 8787:8787 -e ROOT=TRUE -e PASSWORD=pass automl:1.8.26.4
 ```
 
 6. Open in your browser.
