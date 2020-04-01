@@ -119,3 +119,39 @@ https://github.com/it-iex/DataScience/archive/master.zip
 ```{r}
 install.packages(file_name_and_path, repos = NULL, type="source")
 ```
+
+### Container Version
+If you prefer to run a container instead of a bare metal install follow the steps below. 
+
+1. Download the repository from GitHub. 
+```
+https://github.com/it-iex/DataScience/archive/master.zip
+```
+
+2. Go to the download location and unzip the package. 
+
+3. Go into the autoML directory. 
+```
+cd DataScience/autoML/
+```
+
+4 Load the image.
+```
+docker load -i automl-1.8.26.4.tar
+```
+
+5. Start the Docker instance. 
+```
+docker run --rm -p 8787:8787 -e ROOT=TRUE -e PASSWORD=pass automl:1.8.26
+```
+
+6. Open in your browser.
+```
+http://localhost:8787
+```
+
+## Credit
+
+The Docker container is built off of another R Studio container from [rocker](https://github.com/rocker-org/rocker). You can find this on [GitHub](https://github.com/rocker-org/rocker/tree/master/rstudio) and [DockerHub](https://hub.docker.com/r/rocker/rstudio).
+
+[R Studio](https://rstudio.com/) is used for this project. R Studio is a great IDE for R projects. 
