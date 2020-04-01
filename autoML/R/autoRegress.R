@@ -53,7 +53,7 @@ autoRegress <- function(form, dat) {
 
   for (mod in modelList) {
     for (param in paramList) {
-      cv.folds <- createMultiFolds(y, k=10, times = 3)
+      cv.folds <- caret::createMultiFolds(y, k=10, times = 3)
       ctr <- caret::trainControl(method = param, index = cv.folds, number=10, repeats = 10)
       results[[paste(mod, param, sep = ".")]] <-
         caret::train(
